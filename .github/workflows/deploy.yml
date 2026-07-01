@@ -2,7 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    # feature branch included so each iteration deploys live during the build; drop it once merged to main
+    branches: [main, claude/manfinfla-website-agents-mo7pew]
   workflow_dispatch: {}
 
 permissions:
