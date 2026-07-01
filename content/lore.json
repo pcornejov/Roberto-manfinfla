@@ -1,0 +1,66 @@
+{
+  "$schemaVersion": 1,
+  "timeline": [
+    {
+      "year": "2000",
+      "title": "Nace el Alegale!",
+      "body": "Sucio y Culeco, estudiantes de Informática en la Universidad de Viña del Mar, arman un sitio web con sus amigos (Eskiso, Bizarro, Waffle) pa' weviar a los compañeros de curso. En una fiesta, \"El Fumador Tecno Party\" bautiza el proyecto como \"Alegale!\".",
+      "highlight": false
+    },
+    {
+      "year": "2001",
+      "title": "El origen: aparece Roberto",
+      "body": "Con los bocetos del Culeco nace Roberto Manfinfla. El piloto fue una prueba de Macromedia Flash dibujada a puro mouse y publicada en alegale.tk. Es el único episodio donde suena cuando Roberto parpadea. Historia pura.",
+      "highlight": true
+    },
+    {
+      "year": "2002–2004",
+      "title": "El peak",
+      "body": "La animación Flash chilena vive su época dorada y Manfinfla se comparte por MSN, se baja en cyber cafés y se ve a escondidas del papá. La serie se vuelve culto entre los adolescentes de la época.",
+      "highlight": false
+    },
+    {
+      "year": "2005–2016",
+      "title": "",
+      "body": "...puro silencio, compadre...",
+      "highlight": false,
+      "pause": true
+    },
+    {
+      "year": "2010–2020",
+      "title": "Mientras tanto: el spin-off pirata",
+      "body": "César Fukencio (César Fuentes), diseñador gráfico y youtuber, publica \"Las Nuevas Aventuras de Roberto Manfinfla\", una secuela espiritual NO oficial con nuevos personajes e historia lineal, hasta febrero de 2020. El capítulo 17 llegó a ser considerado lost media hasta que apareció.",
+      "highlight": false
+    },
+    {
+      "year": "2017",
+      "title": "El punto de inflexión",
+      "body": "En octubre, Sucio se compra un computador y una tableta Wacom. Parece poco, pero de ahí salió todo lo que vino después.",
+      "highlight": false
+    },
+    {
+      "year": "2018",
+      "title": "Alegale! se pone corbata",
+      "body": "El colectivo se constituye como empresa: Alegale! Team Ltda., Viña del Mar. La mugre ahora tiene personalidad jurídica.",
+      "highlight": false
+    },
+    {
+      "year": "2019",
+      "title": "\"El Viaje\": el regreso",
+      "body": "Se estrena el corto \"El Viaje\", dirigido por Daniel Suazo y con el Culeco de vuelta en las voces. Presupuesto estimado: 500 dólares. Resultado: más de 500.000 visualizaciones. Hagan la cuenta del retorno por peso invertido.",
+      "highlight": false
+    },
+    {
+      "year": "2024",
+      "title": "\"Mamón Xpress\"",
+      "body": "Se estrena \"Mamón Xpress\", casi 25 minutos, lo más largo que ha parido la franquicia. Esta vez sin la participación del Culeco.",
+      "highlight": false
+    },
+    {
+      "year": "Hoy",
+      "title": "En pausa, pero no muerto",
+      "body": "Sucio tiene el proyecto en pausa por burnout y falta de recursos, pero descarta cerrarlo. Roberto no muere, solo se recompila.",
+      "highlight": false
+    }
+  ]
+}

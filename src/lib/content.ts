@@ -1,6 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { VideoEntry, VideosFile } from "./types";
+import type {
+  CharacterEntry,
+  TimelineNode,
+  VideoEntry,
+  VideosFile,
+} from "./types";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
@@ -15,4 +20,21 @@ export function getVideos(): VideoEntry[] {
 
 export function getVideoBySlug(slug: string): VideoEntry | undefined {
   return getVideos().find((v) => v.slug === slug);
+}
+
+export function getCharacters(): CharacterEntry[] {
+  const raw = fs.readFileSync(
+    path.join(CONTENT_DIR, "characters.json"),
+    "utf8",
+  );
+  return (JSON.parse(raw) as { characters: CharacterEntry[] }).characters;
+}
+
+export function getCharacterBySlug(slug: string): CharacterEntry | undefined {
+  return getCharacters().find((c) => c.slug === slug);
+}
+
+export function getTimeline(): TimelineNode[] {
+  const raw = fs.readFileSync(path.join(CONTENT_DIR, "lore.json"), "utf8");
+  return (JSON.parse(raw) as { timeline: TimelineNode[] }).timeline;
 }

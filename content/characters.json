@@ -1,0 +1,40 @@
+{
+  "$schemaVersion": 1,
+  "characters": [
+    {
+      "slug": "roberto-manfinfla",
+      "name": "Roberto Manfinfla",
+      "role": "Protagonista",
+      "shortBio": "El del afro. 18-19 años, vive con su papá y su fama viene del apellido. El sitio oficial lo presenta sin anestesia: \"el retorno del pajero más popular después de vo'\".",
+      "bio": "Joven de 18-19 años con el afro más icónico del Flash chileno, diseñado por el Culeco en los bocetos originales del 2001. Vive con su padre en Santiago y su vida gira en torno a la obsesión que le da nombre al apellido, mientras capea problemas familiares, laborales y sociales con la dignidad justa. Según la descripción oficial del piloto, el personaje posiblemente está basado en el Culeco o el Eskiso, compañeros de universidad de Sucio. El slogan del sitio oficial lo resume mejor que nadie: \"el retorno del pajero más popular después de vo'\"."
+    },
+    {
+      "slug": "el-padre",
+      "name": "El Padre de Roberto",
+      "role": "Secundario",
+      "shortBio": "Hombre de mal genio que expresa su amor paternal mediante insultos. Un clásico.",
+      "bio": "El papá de Roberto es un hombre de mal genio cuya forma de expresar amor paternal es el insulto directo y sin filtro. Convive con Roberto en Santiago y es la fuente de buena parte de los conflictos domésticos de la serie. En \"El Viaje\" (2019) fue interpretado vocalmente por Daniel Suazo, acreditado oficialmente como \"Papa de Roberto\"."
+    },
+    {
+      "slug": "el-palta",
+      "name": "El Palta",
+      "role": "Secundario",
+      "shortBio": "Amigo de Roberto y representante oficial del chileno promedio en el universo Manfinfla.",
+      "bio": "Amigo de Roberto que carga con la misión de representar al chileno promedio dentro del universo Manfinfla: ni muy vivo ni muy tonto, siempre presente cuando hay que acompañar una mala decisión."
+    },
+    {
+      "slug": "el-viejo-del-bano",
+      "name": "El Viejo del Baño",
+      "role": "Secundario recurrente",
+      "shortBio": "Debutó en el episodio \"El Baño\" y quedó pa' siempre en la memoria colectiva. No preguntes por qué.",
+      "bio": "Personaje que debutó en el episodio \"El Baño\" (S01E02) y se ganó un lugar en la memoria colectiva de los que vieron la serie en un cyber café el 2003. Los detalles de su aparición es mejor verlos que contarlos: por algo la serie trae advertencia de contenido."
+    },
+    {
+      "slug": "la-barra",
+      "name": "Codos, Chocolino y Clarence",
+      "role": "Secundarios",
+      "shortBio": "La barra de amigos que acompaña a Roberto en sus aventuras. Ninguno es buena influencia.",
+      "bio": "El resto de la barra de Roberto: Codos, Chocolino y Clarence, los amigos que lo acompañan en sus aventuras a lo largo de la serie. De ninguno se puede decir que sea buena influencia, y esa es precisamente la gracia."
+    }
+  ]
+}

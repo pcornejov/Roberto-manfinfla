@@ -1,5 +1,21 @@
 export type Serie = "original" | "especiales" | "originales" | "c-men";
 
+export interface CharacterEntry {
+  slug: string;
+  name: string;
+  role: string;
+  shortBio: string;
+  bio: string;
+}
+
+export interface TimelineNode {
+  year: string;
+  title: string;
+  body: string;
+  highlight: boolean;
+  pause?: boolean;
+}
+
 export interface VideoEntry {
   id: string;
   platform: "vimeo" | "youtube";
