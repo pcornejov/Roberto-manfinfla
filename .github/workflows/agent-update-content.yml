@@ -1,0 +1,55 @@
+name: Agente de contenido
+
+on:
+  schedule:
+    # todos los días a las 06:00 UTC
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Ejecutar agente de contenido
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npx tsx scripts/agent/update-content.ts
+
+      - name: Commit y push si hay contenido nuevo
+        id: commit
+        run: |
+          if git diff --quiet content/; then
+            echo "Sin cambios en content/, nada que commitear."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "manfinfla-agent[bot]"
+            git config user.email "noreply@github.com"
+            git add content/
+            git commit -m "chore(content): actualización automática del catálogo de videos"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Los pushes con GITHUB_TOKEN no disparan workflows on:push,
+      # así que el deploy se despacha explícitamente.
+      - name: Despachar deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref "${{ github.ref_name }}" -R "${{ github.repository }}"

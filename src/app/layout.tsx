@@ -16,12 +16,20 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pcornejov.github.io/Roberto-manfinfla"),
   title: {
     default: "Roberto Manfinfla",
     template: "%s · Roberto Manfinfla",
   },
   description:
     "El sitio de fans dedicado a Roberto Manfinfla, la serie Flash más grotesca que parió Viña del Mar.",
+  openGraph: {
+    title: "Roberto Manfinfla",
+    description:
+      "Todos los episodios de la serie Flash chilena de culto, embebidos desde el canal oficial de Alegale! Team.",
+    type: "website",
+    locale: "es_CL",
+  },
 };
 
 export default function RootLayout({
